@@ -1,0 +1,11 @@
+{
+    "name": "sm_1",
+    "version": "0.1.0",
+    "private": "true",
+    "scripts": {
+        "serve": "http-server -a localhost -p 8080 -c-1 --cors"
+    },
+    "dependencies": {
+        "bootstrap": "^5.1.3"
+    }
+}

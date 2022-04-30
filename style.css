@@ -1,0 +1,125 @@
+/*@import 'bootstrap/dist/css/bootstrap.min.css';*/
+.sending{
+    display: none;
+}
+
+/*---------Анимация загрузки--------*/
+.sending-msg{
+    font-weight: bold;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 30px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l 1.5s steps(4) infinite;
+}
+@keyframes l {
+    to {
+        clip-path: inset(0 -1ch 0 0)
+    }
+}
+.show-block{
+    display: flex;
+}
+/*---------Анимация загрузки--------*/
+
+body{
+    background-color: #CBCBCB;
+}
+.header{
+    background-color: #7BBEFF;
+}
+.header__container{
+
+}
+.header__logo{
+
+}
+.header__title{
+
+}
+
+.navigation{
+    border-radius: 2rem;
+    background-color: #7BBEFF;
+}
+.navigation__link{
+    border-radius: 2rem;
+    color:black;
+}
+.links-list{
+    border-radius: 2rem;
+    padding-left: 0;
+    list-style-type: none;
+}
+@media (max-width: 576px){
+    .links-list__link{
+        background-color: #7BBEFF;
+        border-radius: 2rem;
+        border: 1px solid black;
+    }
+    .links-list__link a{
+        text-decoration: none;
+    }
+}
+@media (min-width: 576px) {
+    .links-list{
+        background-color: #7BBEFF;
+        padding-left: 15vw!important;
+    }
+    .links-list__link a{
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    .links-list__link a::before{
+        content: '';
+
+        position: absolute;
+        top: calc(50% - 0.35rem);
+        left: 0;
+        width: 1rem;
+        height: 1rem;
+        background-image: url("img/black_square.svg");
+        background-size: 1rem 1rem;
+    }
+}
+
+.links-list__link{
+
+    padding: 10px 0;
+    /*border: 1px solid black;*/
+    /*margin: 0.5rem 0 0 0;*/
+}
+.links-list__link a{
+    color: black;
+}
+.table{
+    border-radius: 2rem;
+    background-color: #7BBEFF;
+}
+.table table, .table th, .table td{
+    width: inherit;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.table th, .table td{
+    width: 14.28%;
+}
+.table caption{
+    color: black;
+}
+.footer{
+    background-color: #7BBEFF;
+}
+.send-form{
+    border-radius: 2rem;
+    background-color: #FFB822;
+}
+.send-form__form input,
+.send-form__form textarea,
+.send-form__form select,
+.send-form__form button{
+    border-radius: 0.5rem;
+}
+.send-form input[type='radio'], input[type='checkbox']{
+    transform: scale(2);
+}
